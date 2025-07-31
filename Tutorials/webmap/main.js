@@ -1,9 +1,10 @@
 // Create a map and set its view to a specific location and zoom level
 var map = L.map("map").setView([40.70491, -73.97144], 13);
 
+// Add the OpenStreetMap tile layer
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
-  attribution: "© OpenStreetMap contributors",
+  attribution: "© OpenStreetMap contributors"
 }).addTo(map);
 
 // Create a layer group for the markers
@@ -99,5 +100,30 @@ fetch(
       errorDiv.style.color = '#e74c3c';
     }
   });
+  // Initialize Supabase client (uncomment and fill in your credentials)
+  const { createClient } = supabase;
+  const supabaseUrl = 'YOUR_SUPABASE_URL';
+  const supabaseKey = 'YOUR_SUPABASE_ANON_KEY';
+  const supabaseClient = createClient(supabaseUrl, supabaseKey);
 
+  async function querySupabase() {
+    try {
+      const { data, error } = await supabaseClient
+        .from("open-restaurant-inspections")
+        .select("*")
+        .limit(100);
 
+      if (error) {
+        console.error("Error fetching data from Supabase:", error);
+      } else {
+        console.log("Data fetched successfully from Supabase:", data);
+        // Process Supabase data here if needed
+      }
+    } catch (error) {
+      console.error("Error in querySupabase:", error);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    querySupabase();
+  });
