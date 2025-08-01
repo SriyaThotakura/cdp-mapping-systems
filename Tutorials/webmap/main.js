@@ -1,10 +1,9 @@
 // Create a map and set its view to a specific location and zoom level
 var map = L.map("map").setView([40.70491, -73.97144], 13);
 
-// Add the OpenStreetMap tile layer
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
-  attribution: "© OpenStreetMap contributors"
+  attribution: "© OpenStreetMap contributors",
 }).addTo(map);
 
 // Create a layer group for the markers
@@ -100,30 +99,28 @@ fetch(
       errorDiv.style.color = '#e74c3c';
     }
   });
-  // Initialize Supabase client (uncomment and fill in your credentials)
-  const { createClient } = supabase;
-  const supabaseUrl = 'YOUR_SUPABASE_URL';
-  const supabaseKey = 'YOUR_SUPABASE_ANON_KEY';
-  const supabaseClient = createClient(supabaseUrl, supabaseKey);
 
+  const { createClient } = supabase;
+
+  const supabaseUrl = 'https://sb_publishable_PPRbeiJQBcj5XS2tUBwnCQ_NaU3DNio.supabase.co'; // ← your actual Supabase URL
+  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNidGdyZHRzYXR5cmN6dnpqbXhwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMzOTQyNjUsImV4cCI6MjA2ODk3MDI2NX0.Iycf9-K3SCuLVJnGLJht68YOOKGsNuD4Z0mQQ0AlhoM-anon-key';                         // ← your anon public key
+  
+  const supabaseClient = createClient(sb_publishable_PPRbeiJQBcj5XS2tUBwnCQ_NaU3DNio, eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNidGdyZHRzYXR5cmN6dnpqbXhwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMzOTQyNjUsImV4cCI6MjA2ODk3MDI2NX0.Iycf9-K3SCuLVJnGLJht68YOOKGsNuD4Z0mQQ0AlhoM);
+  
   async function querySupabase() {
-    try {
-      const { data, error } = await supabaseClient
+    const { data, error } = await supabaseClient
         .from("open-restaurant-inspections")
         .select("*")
         .limit(100);
 
-      if (error) {
-        console.error("Error fetching data from Supabase:", error);
-      } else {
-        console.log("Data fetched successfully from Supabase:", data);
-        // Process Supabase data here if needed
-      }
-    } catch (error) {
-      console.error("Error in querySupabase:", error);
+    if (error) {
+        console.error("Error fetching data:", error);
+    } else {
+        console.log("Data fetched successfully:", data);
     }
-  }
+}
+window.supabase
 
-  document.addEventListener("DOMContentLoaded", () => {
-    querySupabase();
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  querySupabase();
+});
