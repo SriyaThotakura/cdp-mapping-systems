@@ -1,0 +1,200 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-73.96052, 40.814695],
+              [-73.960406, 40.814695],
+              [-73.960406, 40.814781],
+              [-73.96052, 40.814781],
+              [-73.96052, 40.814695]
+            ]
+          ]
+        },
+        "properties": {
+          "name": "Home",
+          "type": "building",
+          "description": "Starting point - Home"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-73.95928, 40.81512],
+              [-73.959187, 40.81512],
+              [-73.959187, 40.815211],
+              [-73.95928, 40.815211],
+              [-73.95928, 40.81512]
+            ]
+          ]
+        },
+        "properties": {
+          "name": "Coffee Place",
+          "type": "building",
+          "description": "Coffee shop stop"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-73.961057, 40.80828],
+              [-73.960964, 40.80828],
+              [-73.960964, 40.808374],
+              [-73.961057, 40.808374],
+              [-73.961057, 40.80828]
+            ]
+          ]
+        },
+        "properties": {
+          "name": "University Building",
+          "type": "building",
+          "description": "Final destination - University"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [-73.960463, 40.814738],
+            [-73.959881, 40.815527],
+            [-73.959779, 40.813917],
+            [-73.961164, 40.811954],
+            [-73.962157, 40.8107],
+            [-73.961834, 40.810285],
+            [-73.961876, 40.810015],
+            [-73.961033, 40.808348]
+          ]
+        },
+        "properties": {
+          "name": "Route",
+          "type": "route",
+          "description": "Walking route from home to university via coffee place"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [-73.9605394, 40.8147492],
+            [-73.9604101, 40.8146911],
+            [-73.9630407, 40.8110967],
+            [-73.961685, 40.8104486],
+            [-73.9611075, 40.8083329]
+          ]
+        },
+        "properties": {
+          "name": "Route2",
+          "type": "route",
+          "description": "Alternative route"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.960463, 40.814738]
+        },
+        "properties": {
+          "name": "Home Crossing",
+          "type": "crossing",
+          "description": "Route node at home"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.9592435, 40.8151654]
+        },
+        "properties": {
+          "name": "Coffee Place Crossing",
+          "type": "crossing",
+          "description": "Route node at coffee place"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.959779, 40.813917]
+        },
+        "properties": {
+          "name": "Intersection Crossing 1",
+          "type": "crossing",
+          "description": "Street intersection"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.961164, 40.811954]
+        },
+        "properties": {
+          "name": "Intersection Crossing 2",
+          "type": "crossing",
+          "description": "Street intersection"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.962157, 40.8107]
+        },
+        "properties": {
+          "name": "Intersection Crossing 3",
+          "type": "crossing",
+          "description": "Street intersection"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.961834, 40.810285]
+        },
+        "properties": {
+          "name": "Intersection Crossing 4",
+          "type": "crossing",
+          "description": "Street intersection"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.961876, 40.810015]
+        },
+        "properties": {
+          "name": "Intersection Crossing 5",
+          "type": "crossing",
+          "description": "Street intersection"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-73.961033, 40.808348]
+        },
+        "properties": {
+          "name": "University Crossing",
+          "type": "crossing",
+          "description": "Route node at university"
+        }
+      }
+    ]
+  }
