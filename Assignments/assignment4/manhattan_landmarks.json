@@ -1,0 +1,58 @@
+{
+  "Empire State Building": {
+    "address": "20 W 34th St, New York, NY 10001",
+    "year_built": 1931,
+    "height_meters": 381,
+    "floors": 102,
+    "architect": "Shreve, Lamb & Harmon",
+    "category": "Skyscraper",
+    "latitude": 40.7486538,
+    "longitude": -73.9853043
+  },
+  "Times Square": {
+    "address": "Manhattan, NY 10036",
+    "year_established": 1904,
+    "area_sq_meters": 270000,
+    "annual_visitors_millions": 50,
+    "category": "Public Square",
+    "latitude": 40.7896239,
+    "longitude": -73.9598939
+  },
+  "Central Park": {
+    "address": "New York, NY 10024",
+    "year_established": 1857,
+    "area_sq_meters": 3410000,
+    "designers": "Frederick Law Olmsted, Calvert Vaux",
+    "category": "Urban Park",
+    "latitude": 40.7127281,
+    "longitude": -74.0060152
+  },
+  "One World Trade Center": {
+    "address": "285 Fulton St, New York, NY 10007",
+    "year_built": 2014,
+    "height_meters": 541.3,
+    "floors": 94,
+    "architect": "David Childs (SOM)",
+    "category": "Skyscraper",
+    "latitude": 40.712949,
+    "longitude": -74.0130438
+  },
+  "Rockefeller Center": {
+    "address": "45 Rockefeller Plaza, New York, NY 10111",
+    "year_built": 1939,
+    "area_sq_meters": 89000,
+    "floors": 70,
+    "category": "Commercial Complex",
+    "latitude": 40.7592576,
+    "longitude": -73.9799569
+  },
+  "Metropolitan Museum of Art": {
+    "address": "1000 5th Ave, New York, NY 10028",
+    "year_established": 1870,
+    "area_sq_meters": 190000,
+    "annual_visitors_millions": 6.5,
+    "category": "Museum",
+    "latitude": 40.7794396,
+    "longitude": -73.9633825
+  }
+}

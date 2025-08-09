@@ -1,0 +1,15 @@
+{
+"type": "FeatureCollection",
+"name": "landmarks",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Times Square, Manhattan, NY" }, "geometry": { "type": "Point", "coordinates": [ -73.9859724, 40.7570095 ] } },
+{ "type": "Feature", "properties": { "name": "Empire State Building, Manhattan, NY" }, "geometry": { "type": "Point", "coordinates": [ -73.9856589, 40.7484421 ] } },
+{ "type": "Feature", "properties": { "name": "Central Park, Manhattan, NY" }, "geometry": { "type": "Point", "coordinates": [ -73.9653627, 40.7827725 ] } },
+{ "type": "Feature", "properties": { "name": "One World Trade Center, Manhattan, NY" }, "geometry": { "type": "Point", "coordinates": [ -74.0131894, 40.7129992 ] } },
+{ "type": "Feature", "properties": { "name": "Rockefeller Center, Manhattan, NY" }, "geometry": { "type": "Point", "coordinates": [ -73.9799569, 40.7592576 ] } },
+{ "type": "Feature", "properties": { "name": "Washington Square Park, Manhattan, NY" }, "geometry": { "type": "Point", "coordinates": [ -73.9976002, 40.7308955 ] } },
+{ "type": "Feature", "properties": { "name": "Brooklyn Bridge, Manhattan, NY" }, "geometry": { "type": "Point", "coordinates": [ -73.9962765, 40.7057498 ] } },
+{ "type": "Feature", "properties": { "name": "The High Line, Manhattan, NY" }, "geometry": { "type": "Point", "coordinates": [ -74.0048912, 40.7477038 ] } }
+]
+}
