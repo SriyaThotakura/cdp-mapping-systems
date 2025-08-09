@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+# Redirect root to the map page
+[[redirects]]
+  from = "/"
+  to = "/web_map.html"
+  status = 200

@@ -1,0 +1,15 @@
+# Build outputs (none expected for static site)
+/build/
+/dist/
+
+# Dependencies (none expected here)
+node_modules/
+
+# Logs
+*.log
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
