@@ -1,33 +1,4 @@
-# %%
-pip show numpy scipy
 
-# %%
-pip install h3
-
-# %%
-pip install seaborn
-
-# %%
-pip install --upgrade numpy scipy
-
-# %%
-pip install --upgrade --force-reinstall numpy==1.24.3 pandas scipy matplotlib
-
-# %%
-pip show osmnx
-
-# %%
-import osmnx as ox
-import networkx as nx
-import geopandas as gpd
-import pandas as pd
-import numpy as np
-
-# Test OSMnx
-G = ox.graph_from_place("Manhattan, New York, USA", network_type='drive', simplify=True)
-print("Success! Network has", len(G.nodes()), "nodes and", len(G.edges()), "edges.")
-
-# %%
 import osmnx as ox
 import networkx as nx
 import geopandas as gpd
@@ -615,12 +586,8 @@ for i in range(n):
 # Optional: Save to CSV
 distances_km.to_csv('landmark_distances_km.csv')
 
-# %%
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
+
 import seaborn as sns
-import networkx as nx
 
 # Create the distance matrix
 data = {
@@ -716,12 +683,6 @@ plt.title('Distribution of Distances Between Landmarks')
 plt.grid(True, alpha=0.3)
 plt.show()
 
-# %%
-import osmnx as ox
-import networkx as nx
-from shapely.geometry import Point
-import numpy as np
-import pandas as pd
 import folium
 
 # Function to calculate shortest path using road network
@@ -964,14 +925,6 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.title("Walking Paths from Columbia University to Manhattan Landmarks", pad=20)
 plt.tight_layout(rect=[0, 0, 0.85, 1])
 plt.show()
-
-# %%
-import osmnx as ox
-import networkx as nx
-import matplotlib.pyplot as plt
-import geopandas as gpd
-from shapely.geometry import Point, LineString
-import pandas as pd
 
 # Configure OSMnx
 ox.settings.log_console = True
