@@ -415,7 +415,5 @@ print("Neighborhoods with highest and lowest species diversity:")
 print("Highest:", species_diversity.head(1))
 print("Lowest:", species_diversity.tail(1))
 
-# %%
-pip install streamlit pandas geopandas matplotlib seaborn folium streamlit-folium
 
 
